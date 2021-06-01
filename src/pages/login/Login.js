@@ -1,6 +1,6 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
-import api from '../../services/api_login';
+// import api from '../../services/api_login';
 import Alert from '../../components/sweet-alert/Alert';
 import './../../assets/scss/styles.scss';
 import imgLogin from '../../assets/img/gcm_350_b.66864f85.png';
@@ -30,15 +30,15 @@ class Login extends React.Component {
     }
   }
 
-  //Metodo para buscar as informações para realizar o login
-  async login(user, pass) {
+  //Metodo para buscar as informações para realizar o login 
+  login (user, pass) {
 
     if (user === 'admin' && pass === 'teste123') {
       this.setState({
         redirect: '/home',
       });
     }else{
-      Alert('error-login', `Usúario ou senha errados`); 
+      Alert('error-login', `Usuário ou senha errados`); 
     }
     // try {
     //   const res = await api.getApiGlpi(user, pass);
