@@ -1,3 +1,7 @@
+Este projeto ainda está em desenvolvimento, estou desenvolvendo as telas para gerar o ticket, nessa etapa somente está desenvolvida a tabela que mostra os tickets gerados no GLPI.
+
+-- This project is still under development, I'm developing the screens to generate the ticket, at this stage only the table that shows the tickets generated in GLPI is developed. --
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
