@@ -1,0 +1,23 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import '~pretty-checkbox/src/pretty-checkbox.scss';
+// @import '~pretty-checkbox/scss/core';
+@import "partials/min/shards-dashboards.1.1.0.min.css";
+// @import "partials/min/pretty-checkbox.min.css";
+// General theme contents
+@import "partials/variables";
+@import "partials/general";
+@import "partials/generic";
+
+@import "app.scss";
+@import "index.scss";
+
+// Theme Element
+// @import "partials/theme-elements/checkbox.scss";
+@import "partials/theme-elements/login";
+@import "partials/theme-elements/header";
+@import "partials/theme-elements/footer";
+@import "partials/theme-elements/home";
+@import "partials/theme-elements/sidebar";
+@import "partials/theme-elements/table";
+@import "partials/theme-elements/ticket";
+

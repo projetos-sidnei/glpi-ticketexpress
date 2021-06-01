@@ -1,0 +1,187 @@
+/**  =====================
+      Authentication css start
+==========================  **/
+
+.auth-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  min-width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(to right,#0077B3 ,#a1e3ff);
+  // background-image: url("../../../img/undraw_public_discussion_btnw.svg");
+  a, p > a {
+      color: $theme-heading-color;
+      font-weight: 600;
+  }
+
+  .input-group{
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+
+      .fa {
+        position: absolute;
+        left: 10px;
+        font-size: 20px;
+        margin-top: 3%;
+      }
+      .form-control{
+        width: 90%;
+        margin-left: 30px;
+        font-size: 16px;
+      }
+  }
+  .card {
+      margin-bottom: 0;
+      box-shadow: 8px 8px 15px rgba(0, 0, 0, .5);
+      border-radius: 20px 5px 20px 20px;
+      .card-header {
+        width: 100%;
+        height: 10vh;
+        background-color: #0077B3;
+        border-radius: 20px 5px 0 0;
+        .title {
+          color: white;
+          font-size: 36px;
+          font-weight:bold;
+        }
+      }
+      .card-body {
+        font-size: 16px;
+        .btn:focus {
+          outline: none !important;
+          width: 25%;
+          font-size: 16px;
+          box-shadow: 0 4px 4px rgba(0, 0, 0, .5);
+          border-color: transparent;
+          margin-top: 16px;
+        }        
+      }
+      .card-icon {
+        margin-top: 32px;
+        align-items: center;
+        .img-login {
+          width: 30vh;
+        }
+      }
+      label {
+        font-weight:bold;
+      }
+  }
+
+  > div {
+      z-index: 5;
+  }
+
+  .auth-content {
+      position: relative;
+      width: 390px;
+      padding: 15px;
+      z-index: 5;
+      &.multyform,
+      &.subscribe {
+          width: 750px;
+      }
+  }
+  
+  @media only screen and (max-width: 768px) {
+      max-width: 360px;
+  }
+  @media only screen and (max-width: 575px) {
+      .card {
+          .card-body {
+            padding: 30px 15px;
+          }
+      }
+  }
+
+  .right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    margin-top: 16px;
+    height: 40%;
+    background-color: #e67168;
+    width: 20%;
+    position: absolute;
+    right:-10%;
+    border-radius: 6px;
+    z-index: 1;
+    transition: all 400ms ease-in-out;
+    box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.281);
+    .inner-container {
+      width: 100%;
+      color:white;
+      .icon-back-slide{
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+        margin-left:85%;
+        margin-top: 5px;
+        border-radius: 25px;
+        &.fa{
+          &:hover{
+            background: #e7837c;
+          }
+        }
+      }
+      .text-container{
+        width: 100%;
+        height: 40%;
+        .text {   
+          width: 100%;
+          font-weight: bold;  
+          font-size: 30px;
+          margin-top: 4%;
+          margin-left: -14px;
+        } 
+        .fa{  
+          position: absolute;
+          font-size: 50px;
+          margin-left: 18px;
+        }
+        .view-container {
+          width: 70%;
+          height: 1px;
+          background-color: white;
+        }
+      }
+
+      .container-info{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 16px;
+        margin-left: 32px;
+        font-size: 14px;
+        .text-limit{
+          margin-bottom: 12px;
+        }
+        .text-limit-user, .text-limit-pass {
+          margin-left: 16px;
+        }
+        .text-null{
+          margin-top: 12px;
+          margin-right: 32px;
+        }
+      }
+      
+    }
+
+    &.right {
+      right: 18%;
+      align-items: flex-start;
+    }
+
+    &.left {
+      right: 40%;
+      align-items: flex-start;
+      visibility: hidden;
+    }
+  }
+}
+/**====== Authentication css end ======**/

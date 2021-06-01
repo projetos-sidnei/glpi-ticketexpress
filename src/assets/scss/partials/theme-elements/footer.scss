@@ -1,0 +1,31 @@
+  .main-footer {
+    height: 3.75rem;
+    width: 100%;
+    display: block;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid #e1e5eb!important;
+    z-index: 1003;
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 3.75rem;
+   span {
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+   }
+    .p-0 {
+      padding: 0 !important;
+      .col {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+      }
+    }
+  }
+}
