@@ -6,7 +6,7 @@ senha:teste123
 -- This project is still under development, I'm developing the screens to generate the ticket, at this stage only the table that shows the tickets generated in GLPI is developed. 
 Note: the internal login api was removed and a static user and password added for testing.
 user:admin
-password:test123
+password:teste123
 --
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
