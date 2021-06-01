@@ -32,26 +32,34 @@ class Login extends React.Component {
 
   //Metodo para buscar as informações para realizar o login
   async login(user, pass) {
-    try {
-      const res = await api.getApiGlpi(user, pass);
-      let error_login = res.data.resultado[0];
-      let error_login_message = res.data.resultado[1];
-      
-      if (res.status === 200) {
-        if(error_login === 'ERROR_GLPI_LOGIN'){
-          Alert('error-login', `${error_login_message}`);      
-        }else{
-          let token = res.data.resultado.session_token;
-          localStorage.setItem('session_token', token);
-          this.setState({
-            redirect:'/home',
-          });
-          // let red = this.state.redirect;
-        }
-      }
-    } catch (err) {
-      Alert('error-server', 'Por favor verificar conexão com o servidor...');
+
+    if (user === 'admin' && pass === 'teste123') {
+      this.setState({
+        redirect: '/home',
+      });
+    }else{
+      Alert('error-login', `Usúario ou senha errados`); 
     }
+    // try {
+    //   const res = await api.getApiGlpi(user, pass);
+    //   let error_login = res.data.resultado[0];
+    //   let error_login_message = res.data.resultado[1];
+
+    //   if (res.status === 200) {
+    //     if(error_login === 'ERROR_GLPI_LOGIN'){
+    //       Alert('error-login', `${error_login_message}`);      
+    //     }else{
+    //       let token = res.data.resultado.session_token;
+    //       localStorage.setItem('session_token', token);
+    //       this.setState({
+    //         redirect:'/home',
+    //       });
+    //       // let red = this.state.redirect;
+    //     }
+    //   }
+    // } catch (err) {
+    //   Alert('error-server', 'Por favor verificar conexão com o servidor...');
+    // }
   }
 
   //Metodo para realizar as validações dos campos usuário e senha quando clicado no botão de acesso

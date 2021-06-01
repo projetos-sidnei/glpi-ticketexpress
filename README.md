@@ -1,6 +1,13 @@
 Este projeto ainda está em desenvolvimento, estou desenvolvendo as telas para gerar o ticket, nessa etapa somente está desenvolvida a tabela que mostra os tickets gerados no GLPI.
+Obs.: foi retirado a api interna de login e adicionado um usuário e senha estáticos para testes.
+usuário:admin 
+senha:teste123
 
--- This project is still under development, I'm developing the screens to generate the ticket, at this stage only the table that shows the tickets generated in GLPI is developed. --
+-- This project is still under development, I'm developing the screens to generate the ticket, at this stage only the table that shows the tickets generated in GLPI is developed. 
+Note: the internal login api was removed and a static user and password added for testing.
+user:admin
+password:test123
+--
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
