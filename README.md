@@ -1,5 +1,5 @@
 Este projeto ainda está em desenvolvimento, estou desenvolvendo as telas para gerar o ticket, nessa etapa somente está desenvolvida a tabela que mostra os tickets gerados no GLPI.
-Obs.: foi retirado a api interna de login e adicionado um usuário e senha estáticos para testes.
+Obs.: foi retirado a api interna de login e de ticket gerado e adicionado um usuário e senha estáticos para testes e um loading para a tabela, já que as apis do projeto só funcional na rede local/localhost.
 usuário:admin 
 senha:teste123
 

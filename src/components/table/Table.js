@@ -68,7 +68,7 @@ export default class Table extends React.Component {
   ];
 
   componentDidMount() {
-    this.loadApiUser();
+    //this.loadApiUser();
   }
 
   clearStorageAll = () => {

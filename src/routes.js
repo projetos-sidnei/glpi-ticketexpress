@@ -15,7 +15,7 @@ const Routes = () => (
   // <Router history={history}>
   <BrowserRouter>
     <Switch>
-      <Route component ={Login} exact path='/'/>
+      <Route component ={Login} exact path='/login'/>
       <PrivateRoute component ={Home} exact path='/home'/>
       {/* <PrivateRoute component ={Nfce} exact path='/nfce'/>
       <PrivateRoute component ={Nfe} exact path='/nfe'/>

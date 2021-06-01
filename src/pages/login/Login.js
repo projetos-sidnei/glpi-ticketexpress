@@ -31,14 +31,16 @@ class Login extends React.Component {
   }
 
   //Metodo para buscar as informações para realizar o login 
-  login (user, pass) {
+  login(user, pass) {
 
     if (user === 'admin' && pass === 'teste123') {
+      let token ='aBCE123!@DDD';
+      localStorage.setItem('session_token', token);
       this.setState({
         redirect: '/home',
       });
-    }else{
-      Alert('error-login', `Usuário ou senha errados`); 
+    } else {
+      Alert('error-login', `Usuário ou senha errados`);
     }
     // try {
     //   const res = await api.getApiGlpi(user, pass);
